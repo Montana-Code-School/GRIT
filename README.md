@@ -6,4 +6,6 @@
 - [Getting Started](#installing-create-react-app)
 
 
-#### <a name="installing-create-react-app"></a>yarn start
+#### <a name="installing-create-react-app"></a>
+After cloning the repo, instead of npm install, run `yarn install`
+To run the app in local host, run `yarn start`
