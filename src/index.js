@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './components/main.js';
+import Mission from './components/mission.js';
+import Stats from './components/stats.js';
+import Testimonials from './components/testimonials.js';
+import Contact from './components/contact.js';
 
-function HelloWorld() {
-  return (
-    <div>Hello World!</div>
-  );
+class Grit extends React.Component {
+  render() {
+    return (
+      <div>
+        <Main />
+        <Mission />
+        <Stats />
+        <Testimonials />
+        <Contact />
+      </div>
+    );
+  }
 }
 
 ReactDOM.render(
-  <HelloWorld/>,
+  <Grit/>,
   document.querySelector('#root'));
