@@ -11,6 +11,7 @@ class Mission extends React.Component {
         students who identify with womanhood by broadening their perspective of
         career options, strengthening their self-confidence, building their
         self-sufficiency and having fun! </p>
+        <img src="../assets/img/girl_at_circular_table_saw.jpg" />
       </div>
     );
   }

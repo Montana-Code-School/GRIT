@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^2.9.1",
     "flexbox-react": "^4.4.0",
+    "jest-enzyme": "^3.6.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-flex-carousel": "^0.2.0",
     "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1",
     "scrollmagic": "^2.0.5"
   },
   "scripts": {
