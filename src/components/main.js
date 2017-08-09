@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Flexbox from 'flexbox-react';
+// import Flexbox from 'flexbox-react';
 
 class Main extends React.Component {
   render () {
