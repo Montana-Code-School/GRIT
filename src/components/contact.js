@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Flexbox from 'flexbox-react';
+// import Flexbox from 'flexbox-react';
+//import photo here
 
 class Contact extends React.Component {
   render () {
@@ -9,7 +9,7 @@ class Contact extends React.Component {
         <h1> GET INVOLVED </h1>
         <h3> 406.123.4567 </h3>
         <h4> ywcaofmissoula.org </h4>
-        <img></img>
+        <img  alt=" "/>
       </div>
     );
   }
