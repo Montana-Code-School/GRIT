@@ -2,7 +2,16 @@ import React from 'react';
 // import Flexbox from 'flexbox-react';
 //import photo here
 
-class Contact extends React.Component {
+
+
+export default class ContactForm extends React.Component {
+ {/* Sets the default state of this component.*/}
+
+
+ {/* Form submission callback.*/}
+
+ {/*Submits form data to the web server.*/}
+
   render () {
     return (
       <div>
