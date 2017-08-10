@@ -1,16 +1,17 @@
 import React from 'react';
+import ContactForm from './contactform.js';
 // import Flexbox from 'flexbox-react';
 //import photo here
 
 
 
-export default class ContactForm extends React.Component {
- {/* Sets the default state of this component.*/}
+export default class Contact extends React.Component {
+ /* Sets the default state of this component.*/
 
 
- {/* Form submission callback.*/}
+ /* Form submission callback.*/
 
- {/*Submits form data to the web server.*/}
+ /*Submits form data to the web server.*/
 
   render () {
     return (
@@ -19,9 +20,8 @@ export default class ContactForm extends React.Component {
         <h3> 406.123.4567 </h3>
         <h4> ywcaofmissoula.org </h4>
         <img  alt=" "/>
+        <ContactForm />
       </div>
     );
   }
 }
-
-export default Contact;
