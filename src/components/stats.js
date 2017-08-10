@@ -4,6 +4,9 @@ import Flexbox from 'flexbox-react';
 import Carousel from 'react-flex-carousel';
 import "../styles/stats.css";
 
+
+
+
 class Stats extends React.Component {
   render () {
     return (
