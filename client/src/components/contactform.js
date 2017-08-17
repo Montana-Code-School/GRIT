@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import '../App.css';
 
 export default class ContactForm extends React.Component {
 
@@ -14,6 +16,26 @@ export default class ContactForm extends React.Component {
       };
 
       this.handleInputChange = this.handleInputChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event) {
+
+      axios.post('http://localhost:8000/contact/', {
+          name: this.state.name,
+          email: this.state.email,
+          phone: this.state.phone,
+          participant: this.state.participant,
+          mentor: this.state.mentor,
+          instructor: this.state.instructor
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        event.preventDefault();
     }
 
     handleInputChange(event) {
@@ -28,13 +50,13 @@ export default class ContactForm extends React.Component {
 
     render() {
       return (
-        <form>
+        <form onSubmit={this.handleSubmit}>
         <label>
          Name:
          <input
            name="name"
            type="text"
-           checked={this.state.name}
+           value={this.state.name}
            onChange={this.handleInputChange} />
          </label>
          <br/>
@@ -81,6 +103,7 @@ export default class ContactForm extends React.Component {
             checked={this.state.instructor}
             onChange={this.handleInputChange} />
         </label>
+        <input type="submit" value="Click to Submit" />
         </form>
       );
     }
