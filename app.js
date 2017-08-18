@@ -9,19 +9,18 @@ var mg = require('nodemailer-mailgun-transport');
 var bodyParser = require('body-parser');
 var nconf = require ('nconf');
 var auth = require('./config.json');
+var cors = require('cors');
 
 const port = process.env.PORT || 8000;
 
 const app = express();
 var server = require('http').createServer(app);
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
 app.use(express.static(__dirname + '/src'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(cors());
 
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', { flags: 'a' });
 app.use(logger('dev'));
@@ -38,26 +37,29 @@ app.post('/contact',(req,res)=>{
   var name = req.body.name;
   var email = req.body.email;
   var phone = req.body.phone;
-  var participant = req.body.participant;
-  var mentor = req.body.mentor;
-  var instructor = req.body.instructor;
-  var comment = email+" "+phone+' '+' This is what I am interested in: '+ participant+' '+instructor+' '+mentor;
+  var participant = req.body.participant === true ? 'yes' : 'no';
+  var mentor = req.body.mentor === true ? 'yes' : 'no';
+  var instructor = req.body.instructor === true ? 'yes' : 'no';
+  var comment = req.body.comment;
   var isError = false;
 
   if(name) {
     isError = true;
   }
+
   console.log('\nCONTACT FORM DATA: '+ name + ' '+email + ' '+ comment+'\n');
 
   var transporter = nodemailer.createTransport(mg(auth));
 
   var mailOptions = {
-    from: 'brigitta@brigittalee.com',
-    to: 'baltwo@gmail.com',
-    subject: 'Message from GRIT contact form',
-    text: 'My name is '+name+' and I am interested in GRIT. Here is my contact information: '+comment,
+    from: 'brigitta@brigittalee.com',//change this out for YWCA contact info
+    to: 'baltwo@gmail.com',//change this out for YWCA contact info
+    subject: 'Interest in being involved with GRIT (website contact form submission)',
+    text: 'Hello, my name is '+name+'. I am interested in GRIT. My phone number is: '+phone+'. My email is: '+email+'. I am interested in being a participant: '+participant+' mentor: '+mentor+', instructor: '+instructor+'. Additional comments: '+comment+'. ',
     err: isError,
   };
+
+var response = 'submission is successful';
 
   transporter.sendMail(mailOptions, (error, info)=> {
     if (error) {
@@ -66,7 +68,7 @@ app.post('/contact',(req,res)=>{
       console.log('\nRESPONSE SENT: ' + info.response+'\n');
     }
 
-  })  ;
+  });
 });
 
 app.listen(port,()=>console.log('listening on http://localhost:'+ port));
