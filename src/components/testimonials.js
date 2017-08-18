@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Flexbox from 'flexbox-react';
 import Carousel from 'react-flex-carousel';
 
-class Testimonials extends React.Component {
+export default class Testimonials extends React.Component {
   render () {
     return (
       <div>
@@ -19,6 +19,4 @@ class Testimonials extends React.Component {
       </div>
     );
   }
-}
-
-export default Testimonials;
+};

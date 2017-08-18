@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Flexbox from 'flexbox-react';
+import gritHeaderImg from '../img/gritHeaderImg.jpg';
 
-class Main extends React.Component {
+export default class Main extends React.Component {
   render () {
     return (
       <div>
-        <h1>GIRLS REPRESENTING IN TRADES</h1>
+        <img className="headerImg" src={gritHeaderImg} alt="girl with welding mask" />
+        <h1>GRIT</h1>
+        <h2>GIRLS REPRESENTING IN TRADES</h2>
         <a href="#"><button className="btn">Kendra&#39;s Story</button></a>
       </div>
     );
   }
-}
-
-export default Main;
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Flexbox from 'flexbox-react';
 
-class Contact extends React.Component {
+export default class Contact extends React.Component {
   render () {
     return (
       <div>
@@ -13,6 +13,4 @@ class Contact extends React.Component {
       </div>
     );
   }
-}
-
-export default Contact;
+};
