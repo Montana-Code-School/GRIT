@@ -55,7 +55,7 @@ app.post('/contact',(req,res)=>{
     from: 'brigitta@brigittalee.com',//change this out for YWCA contact info
     to: 'baltwo@gmail.com',//change this out for YWCA contact info
     subject: 'Interest in being involved with GRIT (website contact form submission)',
-    text: 'Hello, my name is '+name+'. I am interested in GRIT. My phone number is: '+phone+'. My email is: '+email+'. I am interested in being a participant: '+participant+' mentor: '+mentor+', instructor: '+instructor+'. Additional comments: '+comment+'. ',
+    text: 'Hello, my name is '+name+'. I am interested in GRIT. My phone number is: '+phone+'. My email is: '+email+'. I am interested in being a participant: '+participant+', mentor: '+mentor+', instructor: '+instructor+'. Additional comments: '+comment+'. ',
     err: isError,
   };
 
