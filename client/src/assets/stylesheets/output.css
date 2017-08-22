@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+.headline {
+  font-family: "Avenir Next Heavy", Arial Black, sans-serif;
+  font-weight: normal;
+  font-variant-caps: normal; }
+
+.deckHeadline2 {
+  font-family: "Source Sans Pro", Arial Bold, sans-serif;
+  font-weight: bold; }
+
+.subHeading {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 600;
+  font-variant-caps: normal; }
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif; }
+
+/*# sourceMappingURL=output.css.map */

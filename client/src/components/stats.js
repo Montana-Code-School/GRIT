@@ -7,7 +7,7 @@ import "../styles/stats.css";
 
 
 
-class Stats extends React.Component {
+export default class Stats extends React.Component{
   render () {
     return (
       <div>
@@ -20,6 +20,4 @@ class Stats extends React.Component {
       </div>
     );
   }
-}
-
-export default Stats;
+};
