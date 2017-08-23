@@ -1,0 +1,30 @@
+/* YWCS brand colors and fonts
+primary-color-orange: #FD5A1E
+primary-color-black: #000
+primary-color-white: #FFF
+
+secondary-color-gray: #CCC
+
+font-primary-headline: "Avenir Next Heavy", Arial Black, sans-serif
+font-secondary-headline: "Source Sans Pro", Arial Bold, sans-serif
+font-body: "Source Sans Pro", Arial, sans-serif
+font-subheading: "Source Sans Pro", Arial, sans-serif
+ */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: row;
+  background-color: #FD5A1E;
+  color: #FFF;
+  justify-content: center;
+}
+
+.contactMain {
+  height: 40em;
+  width: 100%;
+  background-image: url('../img/GRIT_construction_site.jpg');
+}

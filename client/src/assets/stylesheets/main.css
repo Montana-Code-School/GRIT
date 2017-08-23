@@ -71,19 +71,7 @@ body {
 }
 
 .scrollMagicPinSpacer {
-  top: auto;
-   left: auto;
-   bottom: auto;
-   right: auto;
-   margin: auto;
-   display: block;
-   position: relative;
-   box-sizing: content-box;
-   width: 1767px;
-   min-height: 332px;
-   height: 332px;
-   padding-top: 0px;
-   padding-bottom: 664px;
+
 }
 
 .introBlock {
@@ -98,6 +86,15 @@ body {
   overflow: hidden;
   max-width: 1920px;
   backface-visibility: hidden;
+  display: block;
+  position: relative;
+  align-items: stretch;
+  box-sizing: content-box;
+  width: 1767px;
+  min-height: 332px;
+  height: 332px;
+  padding-top: 0px;
+  padding-bottom: 664px;
 }
 
 .motionContainer {
@@ -106,34 +103,27 @@ body {
   flex-direction: row;
   position: relative;
   z-index: 1;
+  align-items: stretch;
 }
 
-.motion .left {
+.motionLeft {
   margin-left: 0px;
   margin-top: 0px;
+  width: 100%;
   background-position: 0% 0%;
-  }
-
-.motion .left .contentContainer h1 {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  background-color: green;
-}
-
-.motion .left .image #girlWithTableSaw {
   background-color: white;
   background-image: url("../img/GRIT_girl_at_circular_table_saw.jpg");
-  left: 1.99805%;
   }
 
-.motion .right {
-  margin-left: 0px;
-  margin-top: 0px;
-  background-position: 0% 0%;
-  background-color: blue;
- }
+.motionLeft .contentContainer h1 {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
 
-.motion .right .image {
-  background-color: white;
+.motionRight {
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-position: 0% 0%;
   background-image: url("../img/GRIT_girls_bike.jpg");
  }
