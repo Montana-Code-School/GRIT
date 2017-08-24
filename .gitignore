@@ -21,4 +21,3 @@ yarn-debug.log*
 yarn-error.log*
 
 access.log
-config.json
