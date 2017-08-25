@@ -12,3 +12,8 @@
   width: 50%;
   float:left;
 }
+
+.aboutText {
+  width: 50%;
+  float:right;
+}
