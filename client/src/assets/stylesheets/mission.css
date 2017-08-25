@@ -1,3 +1,4 @@
+
 .orange {
   background-color: #FD5A1E;
   margin:0;
@@ -10,6 +11,7 @@
 
 .aboutImg {
   width: 50%;
+  height: 100%;
   float:left;
 }
 

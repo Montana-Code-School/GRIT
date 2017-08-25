@@ -6,7 +6,7 @@ import '../assets/stylesheets/mission.css';
 export default class Mission extends React.Component {
   render () {
     return (
-      <div>
+      <div className="missionContainer">
         <h1 className='orange about'> ABOUT GRIT </h1>
         <img className="aboutImg" src={girlwithlumber} alt="girl working with table saw" />
         <div className='aboutText'>
