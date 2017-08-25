@@ -1,0 +1,129 @@
+/* YWCS brand colors and fonts
+primary-color-orange: #FD5A1E
+primary-color-black: #000
+primary-color-white: #FFF
+
+secondary-color-gray: #CCC
+
+font-primary-headline: "Avenir Next Heavy", Arial Black, sans-serif
+font-secondary-headline: "Source Sans Pro", Arial Bold, sans-serif
+font-body: "Source Sans Pro", Arial, sans-serif
+font-subheading: "Source Sans Pro", Arial, sans-serif
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+.headline {
+  font-family: "Avenir Next Heavy", Arial Black, sans-serif;
+  font-weight: normal;
+  font-variant-caps: normal;
+  }
+
+.deckHeadline2 {
+  font-family: "Source Sans Pro", Arial Bold, sans-serif;
+  font-weight: bold;
+  }
+
+.subHeading {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 600;
+  font-variant-caps: normal;
+  }
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.pinContainer {
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  min-width: 1594px;
+  width: 1594px;
+  min-height: 372px;
+  height: 372px;
+  padding-top: 0px;
+  padding-bottom: 744px;
+  }
+
+.panel {
+  height: 100%;
+	width: 100%;
+}
+
+
+.scrollContainer {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+.test {
+  background-color: blue;
+}
+
+.scrollMagicPinSpacer {
+
+}
+
+.introBlock {
+  position: fixed;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  bottom: auto;
+  right: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 1920px;
+  backface-visibility: hidden;
+  display: block;
+  position: relative;
+  align-items: stretch;
+  box-sizing: content-box;
+  width: 1767px;
+  min-height: 332px;
+  height: 332px;
+  padding-top: 0px;
+  padding-bottom: 664px;
+}
+
+.motionContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  align-items: stretch;
+}
+
+.motionLeft {
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-position: 0% 0%;
+  background-color: white;
+  background-image: url("../img/GRIT_girl_at_circular_table_saw.jpg");
+  }
+
+.motionLeft .contentContainer h1 {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.motionRight {
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 100%;
+  background-position: 0% 0%;
+  background-image: url("../img/GRIT_girls_bike.jpg");
+ }

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../App.css';
+import '../assets/stylesheets/contactform.css';
 
 export default class ContactForm extends React.Component {
 
@@ -52,69 +52,72 @@ export default class ContactForm extends React.Component {
 
     render() {
       return (
+        <div className="contactUs">
+        <h4>Contact Us: </h4>
         <form onSubmit={this.handleSubmit}>
-        <label>
+        <label className="label">
          Name:
-         <input
+         <input className="text"
            name="name"
            type="text"
            value={this.state.name}
            onChange={this.handleInputChange} />
          </label>
          <br/>
-         <label>
+         <label className="label">
           Email:
-          <input
+          <input className="text"
            name="email"
            type="text"
            value={this.state.email}
            onChange={this.handleInputChange} />
          </label>
           <br />
-         <label>
+         <label className="label">
          Phone:
-          <input
+          <input className="text"
           name="phone"
           type="text"
           value={this.state.phone}
           onChange={this.handleInputChange} />
         </label>
 
-        How would you like to be involved:
-        <label>
-          Participant:
-          <input
+        <p>I&#39;m interested in being a(n):</p>
+        <label className="label">
+          Participant
+          <input className="checkbox"
             name="participant"
             type="checkbox"
             checked={this.state.participant}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
-          Mentor:
-          <input
+        </label><br/>
+        <label className="label">
+          Mentor
+          <input className="checkbox"
             name="mentor"
             type="checkbox"
             checked={this.state.mentor}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
-          Instructor:
-          <input
+        </label><br/>
+        <label className="label">
+          Instructor
+          <input className="checkbox"
             name="instructor"
             type="checkbox"
             checked={this.state.instructor}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
+        </label><br/><br/>
+        <label className="label">
          Additional Comments:
-         <textarea
+         <textarea className="textarea"
            name="comment"
            type="text"
            value={this.state.comment}
            onChange={this.handleInputChange} />
-         </label>
-        <input type="submit" value="Click to Submit" />
+         </label><br/>
+        <input className="submit" type="submit" value="Click to Submit" />
         </form>
+        </div>
       );
     }
   }
