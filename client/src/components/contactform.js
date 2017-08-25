@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../App.css';
+import '../assets/stylesheets/contactform.css';
 
 export default class ContactForm extends React.Component {
 
@@ -74,6 +74,8 @@ export default class ContactForm extends React.Component {
 
     render() {
       return (
+        <div className="contactUs">
+        <h4>Contact Us: </h4>
         <form onSubmit={this.handleSubmit}>
           <label>
            Name:
@@ -105,13 +107,15 @@ export default class ContactForm extends React.Component {
           Instructor:
           <input value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
+        </label><br/>
+        <label className="label">
          Additional Comments:
          <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
          </label>
         <input type="submit" value="Click to Submit" />
+
         </form>
+        </div>
       );
     }
   }
