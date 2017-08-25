@@ -1,0 +1,14 @@
+.orange {
+  background-color: #FD5A1E;
+  margin:0;
+}
+
+.about {
+  padding: 20px;
+  font-size:5em;
+}
+
+.aboutImg {
+  width: 50%;
+  float:left;
+}
