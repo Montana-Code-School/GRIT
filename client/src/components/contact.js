@@ -6,18 +6,15 @@ export default class Contact extends React.Component {
 
   render () {
     return (
-      <div className="contactContainer">
-        <div className="contactHeader">
-          <h1> GET INVOLVED </h1>
-        </div>
-        <div className="contactMain">
-          <div className="contactContent">
-            <h4> <a href="tel:406.123.4567">406.123.4567</a> <br/>
-           <a href="http://ywcaofmissoula.org">ywcaofmissoula.org</a> </h4>
+
+        <div className="contactMain contactContainer" >
+          <h1 className="contactHeader"> GET INVOLVED </h1>
+            <div className="contactContent">
+              <h4> <a href="tel:406.123.4567">406.123.4567</a> <br/>
+                <a href="http://ywcaofmissoula.org">ywcaofmissoula.org</a> </h4>
            <ContactForm />
-          </div>
-        </div>
-      </div>
+            </div>
+         </div>
     );
   }
 }
