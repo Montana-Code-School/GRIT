@@ -8,8 +8,8 @@ export default class Mission extends React.Component {
     return (
       <div className="missionContainer">
         <h1 className='orange about'> ABOUT GRIT </h1>
-        <img className="aboutImg" src={girlwithlumber} alt="girl working with table saw" />
         <div className='aboutText'>
+        <img className="aboutImg" src={girlwithlumber} alt="girl working with table saw" />
           <p> Girls Representing in Trades, aims to empower middle and high school
           students who identify with womanhood by broadening their perspective of
           career options, strengthening their self-confidence, building their

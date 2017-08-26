@@ -5,7 +5,7 @@
 .headerImg {
   background-image: url('../img/gritHeaderImg.jpg');
   z-index:50;
-  height:100%;
+  height:105%;
   width: 100%;
   margin:0;
   background-position: center;
@@ -18,10 +18,16 @@ h1, h2 {
   color:white;
 }
 
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
 .grit {
   color: white;
-  font-size: 10em;
-  padding-top: 2.5em;
+  font-size: 12em;
+  padding-top: 1.8em;
+  text-shadow: 2px 2px 3px #000000;
   margin: 0;
 }
 
