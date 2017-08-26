@@ -1,0 +1,21 @@
+.orange {
+  background-color: #FD5A1E;
+  margin:0;
+}
+
+.testimonials h1 {
+  padding: 20px;
+  font-size:5em;
+}
+
+.slider ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slider ul li > img {
+	display: block;
+	max-width: 50%;
+	margin: 0 auto;
+}
