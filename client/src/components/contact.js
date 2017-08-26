@@ -2,11 +2,11 @@ import React from 'react';
 import ContactForm from './contactform.js';
 import '../assets/stylesheets/contact.css';
 
+
 export default class Contact extends React.Component {
 
   render () {
     return (
-
         <div className="contactMain contactContainer" >
           <h1 className="contactHeader"> GET INVOLVED </h1>
             <div className="contactContent">
