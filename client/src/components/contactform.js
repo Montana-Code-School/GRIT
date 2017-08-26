@@ -61,10 +61,6 @@ export default class ContactForm extends React.Component {
       }
     }
 
-
-
-
-
     handleInputChange(event) {
       const name = event.target.name;
       this.setState({
@@ -100,22 +96,22 @@ export default class ContactForm extends React.Component {
         </label>
         <label>
           Mentor:
-          <input value="mentor" name="selected" type="radio" checked={this.state.selected === "mentor"}
+            <input value="mentor" name="selected" type="radio" checked={this.state.selected === "mentor"}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
+          </label>
+          <label>
           Instructor:
-          <input value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
-            onChange={this.handleInputChange} />
-        </label><br/>
-        <label className="label">
-         Additional Comments:
-         <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
-         </label>
-        <input type="submit" value="Click to Submit" />
+            <input value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
+          onChange={this.handleInputChange} />
+          </label><br/>
+          <label className="label">
+          Additional Comments:
+            <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
+          </label>
+            <input type="submit" value="Click to Submit" />
 
-        </form>
-        </div>
-      );
-    }
-  }
+          </form>
+          </div>
+          );
+        }
+      }

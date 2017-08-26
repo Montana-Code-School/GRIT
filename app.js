@@ -11,6 +11,7 @@ var nconf = require ('nconf');
 var auth = require('./config.json');
 var cors = require('cors');
 
+
 const port = process.env.PORT || 8000;
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
+
 
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', { flags: 'a' });
 app.use(logger('dev'));
@@ -67,7 +69,9 @@ var response = 'submission is successful';
     }
 
   });
+
 });
+
 
 app.listen(port,()=>console.log('listening on http://localhost:'+ port));
 
