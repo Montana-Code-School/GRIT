@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../App.css';
+import '../assets/stylesheets/contactform.css';
 
 export default class ContactForm extends React.Component {
 
@@ -10,9 +10,7 @@ export default class ContactForm extends React.Component {
         name: '',
         email: '',
         phone: '',
-        participant: false,
-        mentor: false,
-        instructor: false,
+        selected: '',
         comment: '',
       };
 
@@ -20,101 +18,104 @@ export default class ContactForm extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(event) {
-
-      axios.post('http://localhost:8000/contact/', {
-          name: this.state.name,
-          email: this.state.email,
-          phone: this.state.phone,
-          participant: this.state.participant,
-          mentor: this.state.mentor,
-          instructor: this.state.instructor,
-          comment: this.state.comment
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-        event.preventDefault();
+    checkForm() {
+      let re = /(@\w+\.\w+)/;
+      return (
+        re.test(this.state.email) &&
+        this.state.name.length > 1 &&
+        this.state.selected.length > 1
+      );
     }
 
-    handleInputChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-
+    confirmSend() {
       this.setState({
-        [name]: value
+        name: '',
+        email: '',
+        phone: '',
+        selected: '',
+        comment: '',
+      });
+
+      console.log('You did it!')
+    }
+
+    handleSubmit(event) {
+      event.preventDefault();
+      if (this.checkForm()) {
+        axios.post('http://localhost:8000/contact/', {
+            name: this.state.name,
+            email: this.state.email,
+            phone: this.state.phone,
+            participant: this.state.selected,
+            comment: this.state.comment
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        this.confirmSend();
+      } else {
+        console.log("FIll out info better");
+      }
+    }
+
+
+
+
+
+    handleInputChange(event) {
+      const name = event.target.name;
+      this.setState({
+        [name]: event.target.value
       });
     }
 
     render() {
       return (
+        <div className="contactUs">
+        <h4>Contact Us: </h4>
         <form onSubmit={this.handleSubmit}>
-        <label>
-         Name:
-         <input
-           name="name"
-           type="text"
-           value={this.state.name}
-           onChange={this.handleInputChange} />
-         </label>
-         <br/>
+          <label>
+           Name:
+           <input name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
+          </label>
+          <br/>
          <label>
           Email:
-          <input
-           name="email"
-           type="text"
-           value={this.state.email}
-           onChange={this.handleInputChange} />
+            <input name="email" type="text" value={this.state.email} onChange={this.handleInputChange} />
          </label>
-          <br />
+            <br />
          <label>
-         Phone:
-          <input
-          name="phone"
-          type="text"
-          value={this.state.phone}
-          onChange={this.handleInputChange} />
+          Phone:
+            <input name="phone" type="text" value={this.state.phone} onChange={this.handleInputChange} />
         </label>
 
         How would you like to be involved:
         <label>
           Participant:
-          <input
-            name="participant"
-            type="checkbox"
-            checked={this.state.participant}
+          <input value="participant" name="selected" type="radio" checked={this.state.selected === "participant"}
             onChange={this.handleInputChange} />
         </label>
         <label>
           Mentor:
-          <input
-            name="mentor"
-            type="checkbox"
-            checked={this.state.mentor}
+          <input value="mentor" name="selected" type="radio" checked={this.state.selected === "mentor"}
             onChange={this.handleInputChange} />
         </label>
         <label>
           Instructor:
-          <input
-            name="instructor"
-            type="checkbox"
-            checked={this.state.instructor}
+          <input value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
             onChange={this.handleInputChange} />
-        </label>
-        <label>
+        </label><br/>
+        <label className="label">
          Additional Comments:
-         <textarea
-           name="comment"
-           type="text"
-           value={this.state.comment}
-           onChange={this.handleInputChange} />
+         <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
          </label>
         <input type="submit" value="Click to Submit" />
+
         </form>
+        </div>
       );
     }
   }

@@ -37,9 +37,7 @@ app.post('/contact',(req,res)=>{
   var name = req.body.name;
   var email = req.body.email;
   var phone = req.body.phone;
-  var participant = req.body.participant === true ? 'yes' : 'no';
-  var mentor = req.body.mentor === true ? 'yes' : 'no';
-  var instructor = req.body.instructor === true ? 'yes' : 'no';
+  var participant = req.body.participant;
   var comment = req.body.comment;
   var isError = false;
 
@@ -52,10 +50,10 @@ app.post('/contact',(req,res)=>{
   var transporter = nodemailer.createTransport(mg(auth));
 
   var mailOptions = {
-    from: 'brigitta@brigittalee.com',//change this out for YWCA contact info
-    to: 'baltwo@gmail.com',//change this out for YWCA contact info
+    from: 'cplattkuhn@gmail.com',//change this out for YWCA contact info
+    to: 'cplattkuhn@gmail.com',//change this out for YWCA contact info
     subject: 'Interest in being involved with GRIT (website contact form submission)',
-    text: 'Hello, my name is '+name+'. I am interested in GRIT. My phone number is: '+phone+'. My email is: '+email+'. I am interested in being a participant: '+participant+', mentor: '+mentor+', instructor: '+instructor+'. Additional comments: '+comment+'. ',
+    text: 'Hello, my name is '+name+'. I am interested in GRIT. My phone number is: '+phone+'. My email is: '+email+'. I am interested in being a '+ participant +'. Additional comments: '+comment+'. ',
     err: isError,
   };
 
