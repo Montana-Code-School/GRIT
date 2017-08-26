@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import girlwithlumber from '../assets/img/GRIT_girl_with_lumber.jpg';
 import '../assets/stylesheets/mission.css';
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import gritHeaderImg from '../assets/img/gritHeaderImg.jpg';
 import  '../assets/stylesheets/main.css';
 
 
