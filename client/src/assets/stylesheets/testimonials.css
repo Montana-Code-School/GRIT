@@ -1,6 +1,6 @@
 .orange {
   background-color: #FD5A1E;
-  margin: 0;
+  margin:0;
 }
 
 .testimonials h1 {
@@ -8,57 +8,4 @@
   font-size:5em;
 }
 
-.slider ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
 
-.slider ul li > img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
-    margin: 0 auto;
-}
-
-.slider ol {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    bottom: .5em;
-    text-align: center;
-    width: 100%;
-}
-
-.slider ol li {
-    display: inline-block;
-    min-width: 10px;
-    min-height: 10px;
-    width: .6em;
-    height: .6em;
-    background-color: #BEC0BC ;
-    margin: 0 .5em;
-    border-radius: 50%;
-    overflow: visible;
-}
-
-.slider ol button {
-    opacity: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-.slider ol .active {
-    pointer-events: none;
-    background-color: black;
-}
-/*
-.slider .prev {
-    left: 0;
-}
-
-.slider .next {
-    right: 0;
-}*/
