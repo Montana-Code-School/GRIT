@@ -12,10 +12,22 @@
 .aboutImg {
   width: 50%;
   height: 100%;
-  float:left;
+  margin: 0;
 }
 
 .aboutText {
-  width: 50%;
-  float:right;
+  width: 100%;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutText p {
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 2em;
+
 }
