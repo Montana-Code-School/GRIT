@@ -12,7 +12,8 @@ export default class ContactForm extends React.Component {
         phone: '',
         participant: false,
         mentor: false,
-        instructor: false
+        instructor: false,
+        comment: '',
       };
 
       this.handleInputChange = this.handleInputChange.bind(this);
@@ -27,7 +28,8 @@ export default class ContactForm extends React.Component {
           phone: this.state.phone,
           participant: this.state.participant,
           mentor: this.state.mentor,
-          instructor: this.state.instructor
+          instructor: this.state.instructor,
+          comment: this.state.comment
         })
         .then(function (response) {
           console.log(response);
@@ -103,6 +105,15 @@ export default class ContactForm extends React.Component {
             checked={this.state.instructor}
             onChange={this.handleInputChange} />
         </label>
+
+        <label>
+         Additional Comments:
+         <textarea
+           name="comment"
+           type="text"
+           value={this.state.comment}
+           onChange={this.handleInputChange} />
+         </label>
         <input type="submit" value="Click to Submit" />
         </form>
       );

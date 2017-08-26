@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Flexbox from 'flexbox-react';
-import gritHeaderImg from '../img/gritHeaderImg.jpg';
+import gritHeaderImg from '../assets/img/gritHeaderImg.jpg';
+
 
 export default class Main extends React.Component {
   render () {
