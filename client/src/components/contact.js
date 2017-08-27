@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
         <div className="contactMain contactContainer" >
           <h1 className="contactHeader"> GET INVOLVED </h1>
             <div className="contactContent">
-              <h4> <a href="tel:406.123.4567">406.123.4567</a> <br/>
+              <h4> <a href="tel:406.543.6691">406.543.6691</a> <br/>
                 <a href="http://ywcaofmissoula.org">ywcaofmissoula.org</a> </h4>
            <ContactForm />
             </div>
