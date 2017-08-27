@@ -114,8 +114,7 @@ export default class statsShow extends React.Component {
                       programs are girls. </p>
                   </div>
 
-            <a className="statsPrev" onClick={this.statsMinusSlidesClick}>&#10094;
-            {this.state.statsIndex}</a>
+            <a className="statsPrev" onClick={this.statsMinusSlidesClick}>&#10094;</a>
             <a className="statsNext" onClick={this.statsPlusSlidesClick}>&#10095;</a>
          </div>
          <br/>

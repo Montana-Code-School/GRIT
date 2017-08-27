@@ -35,6 +35,7 @@
 
 .statsText {
     display: none;
+    padding-top: 5em;
 }
 
 /* Next & previous buttons */
@@ -47,7 +48,7 @@
   padding: 16px;
   color: #FD5A1E;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -73,14 +74,17 @@
   width: 100%;
   text-align: center;
 }
-
+ .ul {
+   font-size: 1.5em;
+ }
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  /*padding-top: 5em;*/
+  /*padding: 8px 12px;*/
   position: absolute;
-  top: 0;
+  /*top: 0;*/
 }
 
 /* The dots/bullets/indicators */

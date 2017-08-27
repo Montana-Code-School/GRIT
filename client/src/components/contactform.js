@@ -57,7 +57,7 @@ export default class ContactForm extends React.Component {
           });
         this.confirmSend();
       } else {
-        console.log("FIll out info better");
+        console.log("Please fill in all fields");
       }
     }
 
@@ -73,39 +73,50 @@ export default class ContactForm extends React.Component {
         <div className="contactUs">
         <h4>Contact Us: </h4>
         <form onSubmit={this.handleSubmit}>
-          <label>
-           Name:
-           <input name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
-          </label>
-          <br/>
-         <label>
-          Email:
-            <input name="email" type="text" value={this.state.email} onChange={this.handleInputChange} />
-         </label>
-            <br />
-         <label>
-          Phone:
-            <input name="phone" type="text" value={this.state.phone} onChange={this.handleInputChange} />
-        </label>
 
+            <label>
+             Name:
+             <input className='textField' name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
+            </label>
+            <br/>
+            <br/>
+           <label>
+            Email:
+              <input className='textField' name="email" type="text" value={this.state.email} onChange={this.handleInputChange} />
+           </label>
+              <br/>
+              <br/>
+           <label>
+            Phone:
+              <input className='textField' name="phone" type="text" value={this.state.phone} onChange={this.handleInputChange} />
+          </label>
+
+            <br/>
+            <br/>
         How would you like to be involved:
-        <label>
+            <br/>
+
+        <label className='labelFont'>
           Participant:
-          <input value="participant" name="selected" type="radio" checked={this.state.selected === "participant"}
+          <input className='radio' value="participant" name="selected" type="radio" checked={this.state.selected === "participant"}
             onChange={this.handleInputChange} />
         </label>
-        <label>
+        <label className='labelFont'>
           Mentor:
-            <input value="mentor" name="selected" type="radio" checked={this.state.selected === "mentor"}
+            <input className='radio' value="mentor" name="selected" type="radio" checked={this.state.selected === "mentor"}
             onChange={this.handleInputChange} />
           </label>
-          <label>
+          <label className='labelFont'>
           Instructor:
-            <input value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
+            <input className='radio' value="instructor" name="selected" type="radio" checked={this.state.selected === "instructor"}
           onChange={this.handleInputChange} />
-          </label><br/>
+          </label>
+
+          <br/>
+          <br/>
           <label className="label">
           Additional Comments:
+          <br/>
             <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
           </label>
             <input type="submit" value="Click to Submit" />
