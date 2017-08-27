@@ -1,7 +1,4 @@
-.orange {
-  background-color: #FD5A1E;
-  margin:0;
-}
+
 
 .gritLogo {
   width: 90%;
@@ -12,6 +9,7 @@
 .stats {
   /*padding: 20px;*/
   font-size:5em;
+  width: 100%;
 }
 
 .statsLeft {
@@ -23,9 +21,9 @@
   padding-bottom: 2em;
 }
 
-.statsLeft ul {
-  padding-left: 0;
-}
+/*.statsLeft ul {
+
+}*/
 
 
 

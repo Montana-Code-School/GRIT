@@ -8,7 +8,7 @@ export default class Stats extends React.Component{
     return (
 
   <div>
-    <h1 className='orange stats'> STATISTICS </h1>
+    
       <div className=''>
         <div className="statsLeft stripes">
             <img className="gritLogo" src={GRITinfographic} alt='grit logo' />

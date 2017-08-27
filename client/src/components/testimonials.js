@@ -27,15 +27,12 @@ export default class Testimonials extends React.Component {
 
   plusSlides() {
    let nextIndex;
-   console.log(this.state.slideIndex);
    if(this.state.slideIndex < 5) {
      nextIndex = this.state.slideIndex + 1;
    } else {nextIndex = this.state.slideIndex}
    this.setState({
      slideIndex: nextIndex
    });
-   console.log("state is set")
-   console.log(this.state.slideIndex);
   }
 
   minusSlides() {
@@ -49,8 +46,6 @@ export default class Testimonials extends React.Component {
   }
 
   showSlides() {
-    console.log("hey");
-    console.log(this.state.slideIndex);
       var i;
       var slideIndex = this.state.slideIndex;
       var slides = document.getElementsByClassName("mySlides");
@@ -64,41 +59,35 @@ export default class Testimonials extends React.Component {
     return (
       <div className='testimonials'>
         <h1 className='orange'> GRIT STORIES </h1>
-
+        <br/>
         <div className="slideshow-container">
 
             <div className="mySlides fade">
               <div className="numbertext">1 / 5</div>
               <img src={girlsBike} alt="girl working with table saw" style={{width:'100%'}} />
-              <div className="text">Caption "we are having so much fun"</div>
             </div>
 
             <div className="mySlides fade">
               <div className="numbertext">2 / 5</div>
               <img src={girlsChopsaw} alt="girl working with table saw" style={{width:'100%'}} />
-              <div className="text">Caption "chop chop"</div>
             </div>
 
             <div className="mySlides fade">
               <div className="numbertext">3 / 5</div>
               <img src={girlsWelding} alt="girl working with table saw" style={{width:'100%'}} />
-              <div className="text">Caption "Welding sparks"</div>
             </div>
 
             <div className="mySlides fade">
               <div className="numbertext">4 / 5</div>
               <img src={girlsSaw} alt="girl working with table saw" style={{width:'100%'}} />
-              <div className="text">Caption "sawing wood"</div>
             </div>
 
             <div className="mySlides fade">
               <div className="numbertext">5 / 5</div>
               <img src={girlsDrill} alt="girl working with table saw" style={{width:'100%'}} />
-              <div className="text">Caption "drill stuff"</div>
             </div>
 
-            <a className="prev" onClick={this.minusSlidesClick}>&#10094;
-            {this.state.slideIndex}</a>
+            <a className="prev" onClick={this.minusSlidesClick}>&#10094;</a>
             <a className="next" onClick={this.plusSlidesClick}>&#10095;</a>
          </div>
          <br/>
