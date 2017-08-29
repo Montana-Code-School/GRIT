@@ -1,16 +1,32 @@
-/* YWCS brand colors and fonts
-primary-color-orange: #FD5A1E
-primary-color-black: #000
-primary-color-white: #FFF
-
-secondary-color-gray: #CCC
-
-font-primary-headline: "Avenir Next Heavy", Arial Black, sans-serif
-font-secondary-headline: "Source Sans Pro", Arial Bold, sans-serif
-font-body: "Source Sans Pro", Arial, sans-serif
-font-subheading: "Source Sans Pro", Arial, sans-serif
- */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+
+.SliderFormat {
+  display: flex;
+  width:inherit;
+}
+.EmailConfirm {
+  background-color: #FD5A1E;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EmailConfirm h1 {
+  width: 400px;
+}
+.RadioBox p {
+  display: inline;
+}
+.RadioBox {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+}
+
+input::placeholder {
+  color: white;
+}
 
 .label {
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -28,7 +44,7 @@ font-subheading: "Source Sans Pro", Arial, sans-serif
   opacity: .5;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1em;
-  width: 8em;
+  width: 10em;
   height: 1.5em;
   border-radius: 5px;
 }
@@ -39,22 +55,18 @@ font-subheading: "Source Sans Pro", Arial, sans-serif
 	margin: 5px;
 }
 
-/*.text {
-  margin-left: .75em;
-}*/
 textarea {
   width: 14em;
   min-width: 14em;
-  height: 7em !important;
+  min-height: 7em;
   padding: 3px;
   overflow:scroll;
 }
+
 .contactUs {
-  /*width: 40%;*/
-  justify-content: space-around;
-  margin: 5%;
+  overflow: hidden;
+  margin: 5% 0 5% 5%;
   font-size: 1.5em;
-  flex-direction: column;
   align-self: flex-end;
 }
 
@@ -62,8 +74,15 @@ textarea {
   margin: 0 0 5% 0;
   font-size: 1.5em;
   overflow: hidden;
+  width: 250px;
 }
 
 .contactUs p {
-  font-size: 1em;
+  width: 250px;
+}
+.contactUs div {
+  width: 400px;
+}
+.ContactForm div {
+  width: 400px;
 }
