@@ -8,8 +8,8 @@ export default class Stats extends React.Component{
     return (
 
   <div>
-    
-      <div className=''>
+
+      <div>
         <div className="statsLeft stripes">
             <img className="gritLogo" src={GRITinfographic} alt='grit logo' />
               <ul>
