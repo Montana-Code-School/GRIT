@@ -29,7 +29,7 @@ app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLogStream}));
 
 app.get('/', (req,res)=> {
-  res.sendFile(path.join(__dirname +'/src/index.js'));
+  res.sendFile(path.join(__dirname +'/client/src/index.js'));
   }
 );
 
