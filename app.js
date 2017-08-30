@@ -29,7 +29,6 @@ app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLogStream}));
 
 app.get('/', (req,res)=> {
-  res.json({message: "Hello, welcome to our api!"});
   res.sendFile(path.join(__dirname +'/src/index.js'));
   }
 );
