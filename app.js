@@ -30,7 +30,7 @@ app.use(logger('combined', { stream: accessLogStream}));
 
 app.get('/', (req,res)=> {
   res.json({message: "Hello, welcome to our api!"});
-  res.sendFile(path.join(__dirname +'/src/index.js'));
+  res.sendFile(path.join(__dirname +'/client/src/index.js'));
   }
 );
 
@@ -73,6 +73,8 @@ var response = 'submission is successful';
 });
 
 
-app.listen(port,()=>console.log('listening on http://localhost:'+ port));
+app.listen(port,()=>{console.log('listening on http://localhost:'+ port)
+console.log(__dirname)});
+
 
 module.exports = app;
