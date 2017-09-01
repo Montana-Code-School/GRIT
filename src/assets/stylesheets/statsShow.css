@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.statsShow {
+  width: 50%;
+}
+
 .statsShow h1 {
   color: #FD5A1E;
 }
