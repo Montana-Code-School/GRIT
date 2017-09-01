@@ -1,8 +1,6 @@
 import React from 'react';
 import  '../assets/stylesheets/main.css';
 
-
-
 export default class Main extends React.Component {
 
   render () {

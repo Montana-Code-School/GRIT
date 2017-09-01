@@ -1,13 +1,13 @@
 import React from 'react';
 import "../assets/stylesheets/stats.css";
 import GRITinfographic from "../assets/img/GRIT_Infographic_transparent.png";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Stats extends React.Component{
   render () {
     return (
 
-  <div>
+  <div className="statsAboutSection">
 
       <div>
         <div className="statsLeft stripes">
