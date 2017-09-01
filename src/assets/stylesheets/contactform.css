@@ -47,6 +47,7 @@ input::placeholder {
   width: 10em;
   height: 1.5em;
   border-radius: 5px;
+  align-items: flex-start;
 }
 .radio {
 	width : 1.5em;
@@ -81,8 +82,11 @@ textarea {
   width: 250px;
 }
 .contactUs div {
-  width: 400px;
+  width: 20%;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .ContactForm div {
-  width: 400px;
+  width: 50%;
+  height: 10%;
 }

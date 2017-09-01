@@ -96,15 +96,17 @@ export default class statsShow extends React.Component {
               <div className="statsText fade">
                 <div className="numbertext">5 / 6</div>
                   <h1> UNDERREPRESENTED </h1>
-                    <p> In 2014, women made up 46.9% of workforce. Of that: </p>
-                      <ul>
-                        <li> 0.5% were roofers </li>
-                        <li> 1.4% were automative service technicians and mechanics </li>
-                        <li> 1.7% were carpenters </li>
-                        <li> 2.4% were electricians </li>
-                        <li> 4.8% were welders </li>
-                        <li> 5.7% were firefighters </li>
-                      </ul>
+                    <div>
+                      <p> In 2014, women made up 46.9% of workforce. Of that: </p>
+                        <ul>
+                          <li> 0.5% were roofers </li>
+                          <li> 1.4% were automative service technicians and mechanics </li>
+                          <li> 1.7% were carpenters </li>
+                          <li> 2.4% were electricians </li>
+                          <li> 4.8% were welders </li>
+                          <li> 5.7% were firefighters </li>
+                        </ul>
+                    </div>
                   </div>
 
                 <div className="statsText fade">
