@@ -44,7 +44,6 @@ font-subheading: "Source Sans Pro", Arial, sans-serif
   color: #000;
   align-items:center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .contactFlex {
