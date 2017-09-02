@@ -16,19 +16,34 @@
 }
 
 .aboutImgHolder {
-  background-image: url('../img/GRIT_girl_with_lumber.jpg');
-  background-size: cover;
-  background-position: center;
   height: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
 
+.leftImg {
+  min-width: 100%;
+  position: absolute;
+  margin-top: -40%;
+  margin-left: -40%;
+}
+
+.fadeInLeft {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .aboutTextHolder, .aboutImgHolder {
   width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .animated {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutText {
