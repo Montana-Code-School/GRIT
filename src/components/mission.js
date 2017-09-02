@@ -11,7 +11,7 @@ export default class Mission extends React.Component {
         <h1 className='orange about'>ABOUT GRIT</h1>
           <div className='aboutText'>
             <div className="aboutImgHolder">
-            <ScrollAnimation animateIn="zoomIn">
+            <ScrollAnimation animateIn="">
               <img className="leftImg" src={girlwithlumber} />
             </ScrollAnimation>
             </div>

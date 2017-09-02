@@ -143,3 +143,26 @@
 #calamityText {
   font-size: 1.15em;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 950 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 950px) {
+
+  .statsShow {
+    width: 100%;
+    height: auto;
+  }
+
+  .statsText {
+    padding: 1.5em;
+  }
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 1150 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 1150px) {
+
+  .statsText {
+    padding-top: 3em;
+  }
+
+}
