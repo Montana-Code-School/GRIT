@@ -110,7 +110,7 @@ export default class ContactForm extends React.Component {
                   </div>
                   <textarea name="comment" type="text" value={this.state.comment} onChange={this.handleInputChange} />
                   <br />
-                  <input type="submit" value="Click to Submit" />
+                  <input className="submitBtn" type="submit" value="Click to Submit" />
               </form>
             </div>
                       <EmailConfirm message={this.state.emailSuccess}/>
