@@ -17,7 +17,7 @@ export default class Stats extends React.Component{
                 <li> Use skilled trades to help girls identify strength and develop their confidence and leadership skills. </li><br/>
                 <li> Connect young girls with positive mentors in trade based fields. </li><br/>
                 <li> Connect adult women in the trades with one another and create a supportive network. </li><br/>
-                <li> Challenge sterotypes and catalyze change in the trades cultures. </li><br/>
+                <li>{" Challenge stereotypes and catalyze change in the trades' cultures. "}</li><br/>
               </ul>
           </div>
         </div>
