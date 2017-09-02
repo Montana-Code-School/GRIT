@@ -13,7 +13,6 @@ export default class statsShow extends React.Component {
 
   componentDidMount() {
     this.statsShowSlides();
-    console.log("is this working?");
   }
 
   componentDidUpdate() {
@@ -63,7 +62,6 @@ export default class statsShow extends React.Component {
         <div className="stats-slideshow-container statsRight">
 
             <div className="statsText fade">
-              <div className="numbertext">1 / 6</div>
                <div className="statsContent">
                 <h1> THE FUTURE IS FEMALE. AND TRADES. </h1>
                   <p> "One solution to increasing labor participation is to get people in certain demographics - women, veterans and the disabled - to enter the workforce." <br/></p><p id="quote"><em>– Barb Wagner, the chief economist at the Montana Department of Labor and Industry.</em></p>
@@ -72,7 +70,6 @@ export default class statsShow extends React.Component {
 
 
             <div className="statsText fade">
-              <div className="numbertext">2 / 6</div>
                 <div className="statsContent">
                   <h1> WIDESPREAD TRADE SHORTAGES </h1>
                     <p id="calamityText"> Montana is facing an impending economic calamity if something isn&rsquo;t done to address an expected critical shortfall of workers. An estimated 16 million middle-skill jobs (jobs that require post-secondary education or certification that is not a bachelor&rsquo;s, or higher degree) will be created through 2024. </p>
@@ -80,7 +77,6 @@ export default class statsShow extends React.Component {
                 </div>
 
             <div className="statsText fade">
-              <div className="numbertext">3 / 6</div>
                <div className="statsContent">
                 <h1> THE CULPRITS </h1>
                   <ul className="list">
@@ -92,7 +88,6 @@ export default class statsShow extends React.Component {
               </div>
 
             <div className="statsText fade">
-              <div className="numbertext">4 / 6</div>
                <div className="statsContent">
                 <h1> WOMEN&rsquo;S WAGES </h1>
                   <p> The wage gap in the construction industry is suprisingly small. Women earn 91% of men&rsquo;s wages compared to the overall average of 82% across all professions. Jobs traditionally employed by men pay 20-30% more than jobs traditionally held by women. </p>
@@ -100,7 +95,6 @@ export default class statsShow extends React.Component {
               </div>
 
               <div className="statsText fade">
-                <div className="numbertext">5 / 6</div>
                   <div className="statsContent">
                   <h1> UNDERREPRESENTED </h1>
                     <p> In 2014, women made up 46.9% of workforce. Of that: </p>
@@ -116,7 +110,6 @@ export default class statsShow extends React.Component {
                   </div>
 
                 <div className="statsText fade">
-                  <div className="numbertext">6 / 6</div>
                    <div className="statsContent">
                     <h1> POOR ENROLLMENT </h1>
                       <p> Fewer than 5% of all students enrolled in high school technical
