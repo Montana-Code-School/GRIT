@@ -8,11 +8,11 @@ export default class Stats extends React.Component{
     return (
 
   <div className="statsAboutSection">
-
-      <div>
+      <div className="statsInnerContainer">
         <div className="statsLeft stripes">
-            <img className="gritLogo" src={GRITinfographic} alt='grit logo' />
-              <ul>
+        <img className="gritLogo" src={GRITinfographic} alt='grit logo' />
+
+              <ul className="statsList">
                 <li> GRIT aims to engage, educate and empower girls to explore trade and skill based work as attainable and feasible careers.</li><br/>
                 <li> Use skilled trades to help girls identify strength and develop their confidence and leadership skills. </li><br/>
                 <li> Connect young girls with positive mentors in trade based fields. </li><br/>
