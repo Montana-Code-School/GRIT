@@ -82,13 +82,10 @@ textarea {
   width: 250px;
 }
 .contactUs div {
-  width: 20%;
-  align-items: flex-start;
-  justify-content: flex-start;
+  width: 400px;
 }
 .ContactForm div {
-  width: 50%;
-  height: 10%;
+  width: 400px;
 }
 
 .ContactForm {
