@@ -72,7 +72,7 @@ export default class statsShow extends React.Component {
             <div className="statsText fade">
                 <div className="statsContent">
                   <h1> WIDESPREAD TRADE SHORTAGES </h1>
-                    <p id="calamityText"> Montana is facing an impending economic calamity if something isn&rsquo;t done to address an expected critical shortfall of workers. An estimated 16 million middle-skill jobs (jobs that require post-secondary education or certification that is not a bachelor&rsquo;s, or higher degree) will be created through 2024. </p>
+                    <p id="calamityText"> Montana is facing an impending economic calamity if something isn&rsquo;t done to address an expected critical shortfall of workers. Nationally, an estimated 16 million middle-skill jobs (jobs that require post-secondary education or certification that is not a bachelor&rsquo;s, or higher degree) will be created through 2024. </p>
                   </div>
                 </div>
 
@@ -80,8 +80,8 @@ export default class statsShow extends React.Component {
                <div className="statsContent">
                 <h1> THE CULPRITS </h1>
                   <ul className="list">
-                    <li> Widely-accepted stereotypes about women&rsquo;s physical inabilities. </li>
-                    <li> A tolerance for sexual innuendo, homophobia and outright sexual harassment in the workplace. </li>
+                    <li> Widely-accepted stereotypes about women&rsquo;s physical inabilities </li>
+                    <li> A tolerance for sexual innuendo, homophobia and outright sexual harassment in the workplace </li>
                     <li> Inadequate access to employment and training </li>
                   </ul>
                 </div>

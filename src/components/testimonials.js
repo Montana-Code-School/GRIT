@@ -64,7 +64,7 @@ export default class Testimonials extends React.Component {
   render () {
     return (
       <div className='testimonials'>
-        <h1 className='orange'> GRIT STORIES </h1>
+        <h1 className='orange'> GRIT GALLERY </h1>
         <br/>
         <div className="slideshow-container">
 
