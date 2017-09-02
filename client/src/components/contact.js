@@ -1,26 +1,20 @@
 import React from 'react';
 import ContactForm from './contactform.js';
-import ConstructionPhoto from '../assets/img/GRIT_construction_site.jpg';
-
-
+import '../assets/stylesheets/contact.css';
 
 export default class Contact extends React.Component {
- /* Sets the default state of this component.*/
-
-
- /* Form submission callback.*/
-
- /*Submits form data to the web server.*/
 
   render () {
     return (
-      <div>
-        <h1> GET INVOLVED </h1>
-        <h3> 406.123.4567 </h3>
-        <h4> ywcaofmissoula.org </h4>
-        <img src={ConstructionPhoto} alt="group of female students at a contruction site"/>
-        <ContactForm />
-      </div>
+
+        <div className="contactMain contactContainer" >
+          <h1 className="contactHeader"> GET INVOLVED </h1>
+            <div className="contactContent">
+              <h4> <a href="tel:406.123.4567">406.123.4567</a> <br/>
+                <a href="http://ywcaofmissoula.org">ywcaofmissoula.org</a> </h4>
+           <ContactForm />
+            </div>
+         </div>
     );
   }
 }

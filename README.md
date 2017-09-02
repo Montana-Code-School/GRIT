@@ -1,11 +1,10 @@
 
 # GRIT
 
-## Table of Contents
+## To run the back-end server:
 
-- [Getting Started](#installing-create-react-app)
+from terminal in the GRIT root file, run 'node app.js'
 
+## To run the Create-React-App development bundler
 
-#### <a name="installing-create-react-app"></a>
-After cloning the repo, instead of npm install, run `yarn install`
-To run the app in local host, run `yarn start`
+from GRIT/client, run 'npm start'
