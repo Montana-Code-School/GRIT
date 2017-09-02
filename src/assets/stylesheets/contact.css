@@ -39,6 +39,7 @@ font-subheading: "Source Sans Pro", Arial, sans-serif
   display: flex;
   flex-direction: row;
   background: rgba(255,255,255,.75);
+  width: 50%;
   margin: 5% 10% 10% 10%;
   color: #000;
   align-items:center;
@@ -78,4 +79,42 @@ h4 {
 
  a:active {
     color: #CCC;
+  }
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<< 700 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media (max-width: 849px) and (min-width:300px) {
+
+    .contactContent {
+      flex-direction: column;
+      width: 90% !important;
+    }
+  }
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<< 850 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media screen and (max-width: 850px) {
+
+    .contactContent {
+      flex-direction: column;
+      width: 70%;
+    }
+  }
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<< 1450 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media (max-width: 1450px) and (min-width:851px) {
+
+    .contactContent {
+      flex-direction: column;
+      width: 55%;
+      margin: .5em;
+    }
+  }
+
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<< 1451 px and bigger styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media screen and (min-width: 1451px) {
+
+    .contactContent {
+      width: 55%;
+    }
+
   }

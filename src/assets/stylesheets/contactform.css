@@ -44,7 +44,7 @@ input::placeholder {
   opacity: .5;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1em;
-  width: 10em;
+  width: 90%;
   height: 1.5em;
   border-radius: 5px;
   align-items: flex-start;
@@ -57,7 +57,7 @@ input::placeholder {
 }
 
 textarea {
-  width: 14em;
+  width: 90%;
   min-width: 14em;
   min-height: 7em;
   padding: 3px;
@@ -66,9 +66,9 @@ textarea {
 
 .contactUs {
   overflow: hidden;
-  margin: 5% 0 5% 5%;
   font-size: 1.5em;
   align-self: flex-end;
+  padding: 5%;
 }
 
 .contactUs h4 {
@@ -89,4 +89,13 @@ textarea {
 .ContactForm div {
   width: 50%;
   height: 10%;
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  width: 50%;
 }

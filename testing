@@ -1,7 +1,6 @@
 .orange {
   height: 18%;
 }
-
 .gritLogo {
   width: 90%;
   padding-top: 2em;
@@ -46,13 +45,4 @@
 .stripes {
   background-image: url("../img/stripes.png");
   background-repeat: repeat-x;
-}
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 950 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
-@media screen and (max-width: 950px) {
-
-  .statsAboutSection {
-    width: 100%;
-  }
-
 }
