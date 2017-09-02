@@ -1,9 +1,16 @@
-
+.orange {
+  height: 18%;
+}
 
 .gritLogo {
   width: 90%;
-  padding-top: 1.5em;
-  align-content: center;
+  padding-top: 2em;
+}
+
+.statsList {
+  padding: 0em 3em 0em 3em;
+  margin: 0;
+  font-size: smaller;
 }
 
 .stats {
@@ -23,6 +30,10 @@
 
 .statsAboutSection {
   width: 50%;
+}
+
+.statsInnerContainer {
+  height: 100%;
 }
 
 /*.statsLeft ul {

@@ -14,7 +14,7 @@ class Grit extends React.Component {
       <div>
         <Main />
         <Mission />
-        <div>
+        <div className="statsMainContainer">
           <h1 className='orange stats'> STATISTICS </h1>
             <div className="flexWrapper">
               <Stats />

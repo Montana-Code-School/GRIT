@@ -1,9 +1,15 @@
 .flexWrapper {
   display: flex;
+  height: 82%;
 }
 
 .orange {
   background-color: #FD5A1E;
   margin:0;
   padding:20px;
+  height: 18%;
+}
+
+.statsMainContainer {
+  height: 100vh;
 }
