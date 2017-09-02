@@ -16,7 +16,7 @@ export default class Mission extends React.Component {
             </ScrollAnimation>
             </div>
             <div className="aboutTextHolder">
-              <p> Girls Representing in Trades, aims to empower middle and high school
+              <p> Girls Representing in Trades aims to empower middle and high school
               students who identify with womanhood by broadening their perspective of
               career options, strengthening their self-confidence, building their
               self-sufficiency and having fun!
