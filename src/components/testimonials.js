@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/stylesheets/testimonials.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 import girlsBike from '../assets/img/GRIT_girls_bike.jpg';
 import girlsChopsaw from '../assets/img/GRIT_girls_chopsaw.jpg';
 import girlsWelding from '../assets/img/GRIT_girls_welding.jpg';
@@ -66,6 +67,7 @@ export default class Testimonials extends React.Component {
       <div className='testimonials'>
         <h1 className='orange'> GRIT GALLERY </h1>
         <br/>
+
         <div className="slideshow-container">
 
             <div className="mySlides fade">
@@ -122,6 +124,7 @@ export default class Testimonials extends React.Component {
             <a className="next" onClick={this.plusSlidesClick}>&#10095;</a>
          </div>
          <br/>
+        
       </div>
     );
   }

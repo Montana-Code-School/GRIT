@@ -3,6 +3,10 @@
   margin:0;
 }
 
+.testimonials {
+  background-attachment: fixed;
+}
+
 .testimonials h1 {
   padding: 20px;
   font-size:5em;
