@@ -11,16 +11,18 @@ export default class Mission extends React.Component {
         <h1 className='orange about'>ABOUT GRIT</h1>
           <div className='aboutText'>
             <div className="aboutImgHolder">
-            <ScrollAnimation animateIn="">
+            <ScrollAnimation animateIn="fade">
               <img className="leftImg" src={girlwithlumber} />
             </ScrollAnimation>
             </div>
             <div className="aboutTextHolder">
-              <p> Girls Representing in Trades aims to empower middle and high school
-              students who identify with womanhood by broadening their perspective of
-              career options, strengthening their self-confidence, building their
-              self-sufficiency and having fun!
+            <ScrollAnimation animateIn="fade">
+              <p> Girls Representing in Trades aims to <strong>empower</strong> middle and high school
+              students who identify with <strong>womanhood</strong> by broadening their perspective of
+              career options, strengthening their <strong>self-confidence</strong>, building their
+              <strong> self-sufficiency</strong> and having fun!
               </p>
+            </ScrollAnimation>
             </div>
           </div>
       </div>
