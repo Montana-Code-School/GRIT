@@ -1,0 +1,37 @@
+.flexWrapper {
+  display: flex;
+  height: 82%;
+}
+
+.orange {
+  background-color: #FD5A1E;
+  margin:0;
+  padding:20px;
+  height: 18%;
+}
+
+.statsMainContainer {
+  height: 100vh;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 950 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 950px) {
+
+  .statsMainContainer {
+    height: auto;
+  }
+
+  .flexWrapper {
+    flex-direction: column;
+  }
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 1150 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 1150px) {
+
+  .statsMainContainer {
+    height: auto;
+  }
+
+}

@@ -1,0 +1,48 @@
+html, body {
+  margin: 0 auto;
+}
+* {
+  font-family: arial, sans-serif;
+}
+
+.headerImg {
+  background-image: url('../img/gritHeaderImg.jpg');
+  z-index:50;
+  height:100vh;
+  width: 100%;
+  margin:0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2 {
+  z-index: 100;
+  text-align: center;
+  color:white;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-bottom: 1em;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+.grit {
+  color: white;
+  font-size: 12em;
+  padding-top: 3.2em;
+  text-shadow: 2px 2px 3px #000000;
+  margin: 0;
+}
+
+.orange {
+  background-color: #FD5A1E;
+  margin:0;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.yellow {
+  background-color: #f69d00;
+}

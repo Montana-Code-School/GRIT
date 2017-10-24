@@ -1,0 +1,94 @@
+.orange {
+  background-color: #FD5A1E;
+  margin:0;
+  height: 18%;
+}
+
+.about {
+  padding: 20px;
+  font-size:5em;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.aboutImgHolder {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.leftImg {
+  min-width: 100%;
+  position: absolute;
+  margin-top: -40%;
+  margin-left: -40%;
+}
+
+.fadeInLeft {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.aboutTextHolder, .aboutImgHolder {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.animated {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutText {
+  width: 100%;
+  height: 82%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutText p {
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 2em;
+
+}
+
+.missionContainer {
+  height: 100vh;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 950 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 950px) {
+
+  .missionContainer {
+    height: auto;
+  }
+
+  .aboutText {
+    flex-direction: column;
+  }
+
+  .aboutImgHolder {
+    width: 100%;
+  }
+
+  .leftImg {
+    position: relative;
+  }
+
+  .aboutTextHolder {
+    width: 100%;
+  }
+
+}

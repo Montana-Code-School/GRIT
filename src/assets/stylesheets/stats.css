@@ -1,0 +1,57 @@
+.orange {
+  height: 18%;
+}
+
+.gritLogo {
+  width: 90%;
+  padding-top: 2em;
+}
+
+.statsList {
+  padding: 0em 3em 0em 3em;
+  margin: 0;
+  font-size: smaller;
+}
+
+.stats {
+  /*padding: 20px;*/
+  font-size:5em;
+  width: 100%;
+}
+
+.statsLeft {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e6c534;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+.statsAboutSection {
+  width: 50%;
+}
+
+.statsInnerContainer {
+  height: 100%;
+}
+
+/*.statsLeft ul {
+
+}*/
+
+
+
+.stripes {
+  background-image: url("../img/stripes.png");
+  background-repeat: repeat-x;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< 950 px and smaller styles >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 950px) {
+
+  .statsAboutSection {
+    width: 100%;
+  }
+
+}
